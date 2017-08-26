@@ -1,0 +1,76 @@
+#content{
+	float: left;
+	
+}
+#mySelf{
+	background: url(../img/IMG_20170419_102648.jpg) no-repeat;
+	background-size: 100% 100%;
+	z-index: 5;
+}
+
+
+/*竖屏时*/
+@media only screen and (orientation: portrait){
+	#mySelf{
+		width: 100vmin;
+		height: 50vmin;
+		min-height: 40vmax;
+	}
+	#ava{
+		position: relative;
+		width: 20vmin;
+		height: 20vmin;
+		top: 30%;
+		left: 40%;
+	}
+	#mySelf #ava img{
+		height: 100%;
+		width: 100%;
+		
+	}
+	#say{
+		position: relative;
+		width: 100vmin;
+		top: 35%;
+	}
+	#say span{
+		width: 100%;
+		text-align: center;
+		display: block;
+		position: relative;
+		font-size: 3vmin;
+	}
+}
+/*横屏时*/
+@media only screen and (orientation: landscape){
+	#mySelf{
+		position: fixed;
+		width: 30vmax;
+		height: 100vmin;
+	}
+	#ava{
+		position: relative;
+		width: 15vmax;
+		height: 15vmax;
+		top: 30%;
+		left: 7.5vmax;
+	}
+	#mySelf #ava img{
+		height: 100%;
+		width: 100%;
+		
+	}
+	#say{
+		position: relative;
+		width: 30vmax;
+		top: 45%;
+	}
+	#say span{
+		width: 100%;
+		text-align: center;
+		display: block;
+		position: relative;
+		font-size: 3vmin;
+	}
+}
+

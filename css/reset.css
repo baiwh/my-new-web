@@ -1,0 +1,23 @@
+*{
+	box-sizing: border-box;
+	
+}
+body,div,img,a,span,ul,li{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	float: left;
+	/*position: relative;*/
+}
+body{
+	width: 100vw;
+}
+a,span{
+	color: #C9C9C9;
+}
+li{
+	list-style: none;
+}
+a{
+	display: block;
+}

@@ -1,0 +1,261 @@
+#header {
+	position: fixed;
+	height: 70px;
+	width: 100%;
+	background: #000000;
+	opacity: 0.5;
+	top: 0;
+	z-index: 50;
+}
+@media only screen and (orientation: portrait){
+	
+}
+@media only screen and (orientation: landscape){
+	
+}
+
+#header a {
+	color: #c9c9c9;
+	
+}
+
+
+/*房子+字*/
+
+#low {
+	width: 180px;
+	height: 50px;
+	border: 1px solid #C9C9C9;
+	border-radius: 5px;
+	margin: 10px;
+}
+
+#low:hover {
+	border: 1px solid #fcb9fa;
+	box-shadow: 0px 0px 1vw #FCB9FA;
+}
+
+#low a {
+	text-align: center;
+}
+
+
+/*房子*/
+
+#home {
+	float: left;
+	background: url(../img/icon/home.png) no-repeat;
+	height: 30px;
+	width: 30px;
+	background-size: 200% 100%;
+	margin: 7px;
+}
+
+
+/*字*/
+
+#low a span {
+	float: left;
+	height: 50px;
+	width: 130px;
+	line-height: 20px;
+	font-size: 12px;
+	margin: 5px 0px;
+}
+
+
+/*右边的导航*/
+
+#nav {
+	float: right;
+}
+
+#nav .menu {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #C9C9C9;
+	border-radius: 5px;
+	margin: 10px;
+}
+
+#nav .menu:hover {
+	border: 1px solid #fcb9fa;
+	box-shadow: 0px 0px 1vw #FCB9FA;
+	cursor: pointer;
+}
+
+#nav .menu div {
+	margin: 8px;
+	width: 30px;
+	height: 30px;
+	background: url(../img/icon/menu.png) no-repeat;
+	background-size: 200% 100%;
+}
+
+
+/*打开后的导航*/
+
+#bigNav {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	opacity: 0.7;
+	z-index: 100;
+}
+
+
+/*关闭导航*/
+
+#bigNav .closeNav {
+	width: 60px;
+	height: 60px;
+	background: url(../img/icon/close.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+#bigNav .closeNav:hover {
+	background: url(../img/icon/close1.png) no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+}
+
+
+/*导航菜单*/
+
+#bigNav #smallNav {
+	
+	margin: 5%;
+	width: 90%;
+	height: 90%;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	text-align: center;
+	-webkit-transform: translateY(-70%);
+	-ms-transform: translateY(-70%);
+	transform: translateY(-70%);
+	display: flex;
+	justify-content: center;
+}
+
+/*图标*/
+#smallNav .icoH{
+	width: 30%;
+	height: 30%;
+}
+#photo {
+	background: url(../img/icon/photo.png);
+	background-size: 200% 100%;
+}
+#note{
+	background: url(../img/icon/note.png);
+	background-size: 200% 100%;
+}
+#food{
+	background: url(../img/icon/food.png);
+	background-size: 200% 100%;
+}
+#more{
+	background: url(../img/icon/more.png);
+	background-size: 200% 100%;
+}
+
+/*竖屏时*/
+
+@media only screen and (orientation: portrait) {
+	#bigNav ul {
+		position: relative;
+		width: 90%;
+		height: 90%;
+		top: 5%;
+		text-align: center;
+		padding: 10vmin;
+	}
+	#bigNav li {
+		display: inline-block;
+		text-align: center;
+		margin: 5%;
+		border: 1px solid #C9C9C9;
+		border-radius: 1vmin;
+		width: 20vmin;
+		height: 20vmin;
+	}
+	/*鼠标效果*/
+	#bigNav li:hover {
+		border: 1px solid #fcb9fa;
+		box-shadow: 0px 0px 3vmin #FCB9FA;
+	}
+	#bigNav li a {
+		display: block;
+		text-align: center;
+		width: 100%;
+		height: 100%;
+	}
+	#bigNav .icoH {
+		position: relative;
+		left: 7vmin;
+		top: 5vmin;
+	}
+	#bigNav span {
+		position: relative;
+		font-size: 3vmin;
+		top: 7vmin;
+		display: block;
+		width: 20vmin;
+	}
+}
+
+
+/*横屏时*/
+
+@media only screen and (orientation: landscape) {
+	#bigNav ul {
+		position: relative;
+		width: 90%;
+		height: 90%;
+		top: 5%;
+		text-align: center;
+		padding: 3%;
+	}
+	#bigNav li {
+		display: inline-block;
+		text-align: center;
+		margin: 2%;
+		border: 1px solid #C9C9C9;
+		border-radius: 1vmax;
+		width: 15vmax;
+		height: 15vmax;
+	}
+	/*鼠标效果*/
+	#bigNav li:hover {
+		border: 1px solid #fcb9fa;
+		box-shadow: 0px 0px 2vmax #FCB9FA;
+	}
+	#bigNav li a {
+		display: block;
+		text-align: center;
+		width: 100%;
+		height: 100%;
+	}
+	#bigNav .icoH {
+		position: relative;
+		left: 5.5vmax;
+		top: 3.5vmax;
+	}
+	#bigNav span {
+		position: relative;
+		font-size: 1.5vmax;
+		top: 6vmax;
+		display: block;
+		width: 15vmax;
+	}
+}

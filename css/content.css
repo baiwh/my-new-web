@@ -1,0 +1,669 @@
+#content {
+	float: right;
+}
+
+#content a {
+	display: inline-block;
+}
+
+
+
+/*第一部分..食谱*/
+
+#pokerAll {
+	background: #FFFFFF;
+}
+
+#one .pic {
+	background: url(../img/1.jpg);
+	background-size: 100% 100%;
+}
+
+#two .pic {
+	background: url(../img/2.jpg);
+	background-size: 100% 100%;
+}
+
+#three .pic {
+	background: url(../img/3.jpg);
+	background-size: 100% 100%;
+}
+
+#four .pic {
+	background: url(../img/4.jpg);
+	background-size: 100% 100%;
+}
+
+#five .pic {
+	background: url(../img/5.jpg);
+	background-size: 100% 100%;
+}
+
+#lan {
+	position: relative;
+	z-index: 6;
+	width: 100%;
+	top: 15%;
+}
+
+#lan span {
+	width: 100%;
+	text-align: center;
+}
+
+/*里边的所有a*/
+
+#pokerAll a {
+	display: block;
+}
+
+/*竖屏*/
+
+@media only screen and (orientation: portrait) {
+	/*整个大的div*/
+	#pokerAll {
+		width: 100%;
+		height: 60vmin;
+	}
+	/*里边扑克部分*/
+	#poker {
+		position: relative;
+		top: 25%;
+		padding: 0 12.5vmin;
+		width: 100%;
+		height: 70%;
+	}
+	/*每个扑克a里的div*/
+	#poker .page {
+		border: 1px solid rgba(0, 0, 0, 0.5);
+		height: 20vmin;
+		width: 15vmin;
+		box-shadow: 0px 0px 2vmin rgba(0, 0, 0, 0.7);
+	}
+	/*开关整个盒子*/
+	#switch {
+		height: 7vmin;
+		width: 7vmin;
+		background: #C9C9C9;
+		border-radius: 7vmin;
+		position: relative;
+		left: 47%;
+		cursor: pointer;
+	}
+	#switch span {
+		color: #000000;
+		font-size: 3vmin;
+		line-height: 7vmin;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+
+/*横屏*/
+
+@media only screen and (orientation: landscape) {
+	/*整个大的div*/
+	#pokerAll {
+		width: 100%;
+		height: 40vmax;
+	}
+	/*里边扑克部分*/
+	#poker {
+		position: relative;
+		top: 25%;
+		padding: 0 10vmax;
+		width: 100%;
+		height: 70%;
+	}
+	/*每个扑克a里的div*/
+	#poker .page {
+		border: 1px solid rgba(0, 0, 0, 0.5);
+		height: 15vmax;
+		width: 10vmax;
+		box-shadow: 0px 0px 1vmax rgba(0, 0, 0, 0.7);
+	}
+	/*开关整个盒子*/
+	#switch {
+		height: 5vmax;
+		width: 5vmax;
+		background: #C9C9C9;
+		border-radius: 5vmax;
+		position: relative;
+		left: 47%;
+		cursor: pointer;
+	}
+	#switch span {
+		color: #000000;
+		font-size: 2vmax;
+		line-height: 5vmax;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+#switch:hover{
+	background: #000000;
+}
+#switch span:hover{
+	color: #C9C9C9;
+}
+
+/*扑克的定位*/
+
+#one {
+	position: relative;
+	left: 40%;
+	z-index: 1;
+}
+
+#two {
+	position: relative;
+	left: 20%;
+	z-index: 2;
+}
+
+#three {
+	position: relative;
+	z-index: 3;
+}
+
+#four {
+	position: relative;
+	left: -20%;
+	z-index: 4;
+}
+
+#five {
+	position: relative;
+	left: -40%;
+	z-index: 5;
+}
+
+/*放大1.1倍*/
+
+#poker .page:hover {
+	transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	-ms-transform: scale(1.1, 1.1);
+	box-shadow: 0 0 2vmax rgba(0, 0, 0, 0.8);
+	border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+/*上边的图*/
+
+#poker .pic {
+	height: 65%;
+	width: 100%;
+}
+
+/*下边的字*/
+
+#poker .food {
+	height: 35%;
+	width: 100%;
+	background: #ffffff;
+}
+
+#poker .food span {
+	text-align: center;
+	width: 100%;
+	position: relative;
+	top: 30%;
+}
+
+#close {
+	display: none;
+}
+
+/*展开效果*/
+
+.oneh {
+	position: relative;
+	transform: rotate(-30deg);
+	-ms-transform: rotate(-30deg);
+	-webkit-transform: rotate(-30deg);
+}
+
+.twoh {
+	position: relative;
+	transform: rotate(-15deg);
+	-ms-transform: rotate(-15deg);
+	-webkit-transform: rotate(-15deg);
+}
+
+.fourh {
+	position: relative;
+	transform: rotate(15deg);
+	-ms-transform: rotate(15deg);
+	-webkit-transform: rotate(15deg);
+}
+
+.fiveh {
+	position: relative;
+	transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+}
+
+
+
+
+/*第二部分..照片*/
+/*每个照片的背景图*/
+
+#content #gl {
+	background: url(../img/gl.jpg);
+	background-size: 100% 100%;
+}
+
+#content #flower {
+	background: url(../img/flower.jpg);
+	background-size: 100% 100%;
+}
+
+#content #sky {
+	background: url(../img/sky.jpg);
+	background-size: 100% 100%;
+}
+
+#content #street {
+	background: url(../img/street.jpg);
+	background-size: 100% 100%;
+}
+.photoA a{
+	overflow: hidden;
+}
+
+/*竖屏*/
+
+@media only screen and (orientation: portrait) {
+	#content {
+		width: 100vmin;
+	}
+	#content .main {
+		width: 100%;
+	}
+	#content .photoA a{
+		width: 50vmin;
+		height: 30vmin;
+	}
+	#content .photo {
+		float: left;
+		width: 50vmin;
+		height: 30vmin;
+	}
+	/*鼠标悬浮后的东西*/
+	#content .explain {
+		background: #000000;
+		opacity: 0.5;
+		width: 100%;
+		height: 100%;
+		display: none;
+	}
+	/*里边的框*/
+	#content .explainS {
+		width: 80%;
+		height: 80%;
+		border: 1px solid #C9C9C9;
+		margin: 5% 10%;
+	}
+	/*里边所有字*/
+	#content .explainS span {
+		display: block;
+		width: 100%;
+		line-height: 4vmin;
+		text-align: center;
+		font-size: 2.5vmin;
+	}
+	/*按钮外的字*/
+	#content .explainS .word {
+		top: 2.5vmin;
+		position: relative;
+	}
+	/*按钮*/
+	#content .explainS .btn {
+		border: 1px solid #C9C9C9;
+		border-radius: 1vmin;
+		width: 30%;
+		height: 20%;
+		position: relative;
+		left: 35%;
+		top: 5vmin;
+	}
+	#content .explainS .btn:hover {
+		border: 1px solid #FCB9FA;
+		box-shadow: 0px 0px 2vmin #FCB9FA;
+		color: #FCB9FA;
+	}
+	#content .explainS .btn span {
+		font-size: 2vmin;
+	}
+	#content .explainS .btn span:hover {
+		color: #FCB9FA;
+	}
+}
+
+@media only screen and (orientation: landscape) {
+	#content {
+		width: 70vmax;
+		float: right;
+	}
+	#content .main {
+		width: 100%;
+	}
+	#content .photoA a{
+		width: 35vmax;
+		height: 20vmax;
+	}
+	#content .photo {
+		float: left;
+		width: 35vmax;
+		height: 20vmax;
+	}
+	/*鼠标悬浮后的东西*/
+	#content .explain {
+		background: #000000;
+		opacity: 0.5;
+		width: 100%;
+		height: 100%;
+		display: none;
+	}
+	/*里边的框*/
+	#content .explainS {
+		width: 80%;
+		height: 80%;
+		border: 1px solid #C9C9C9;
+		margin: 5% 10%;
+	}
+	/*里边所有字*/
+	#content .explainS span {
+		display: block;
+		width: 100%;
+		line-height: 2.5vmax;
+		text-align: center;
+		font-size: 1.5vmax;
+	}
+	/*按钮外的字*/
+	#content .explainS .word {
+		top: 2vmax;
+		position: relative;
+	}
+	/*按钮*/
+	#content .explainS .btn {
+		border: 1px solid #C9C9C9;
+		border-radius: 0.5vmax;
+		width: 40%;
+		height: 15%;
+		position: relative;
+		left: 30%;
+		top: 3vmax;
+	}
+	#content .explainS .btn:hover {
+		border: 1px solid #FCB9FA;
+		box-shadow: 0px 0px 2vmax #FCB9FA;
+		color: #FCB9FA;
+	}
+	#content .explainS .btn span {
+		line-height: 150%;
+	}
+	#content .explainS .btn span:hover {
+		color: #FCB9FA;
+	}
+}
+
+
+
+
+
+/*第三部分..笔记*/
+#studyNotes{
+	overflow: hidden;
+}
+#book{
+	width: 100%;
+	height: 25%;
+	
+}
+#book span{
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 40%;
+}
+/*左边一坨*/
+#left{
+	float: left;
+	width: 50%;
+}
+#left a{
+	float: left;
+}
+#left a div{
+	float: right;
+}
+#left a div img{
+	float: right;
+}
+#left a div span{
+	float: right;
+}
+/*右边一坨*/
+#right{
+	float: right;
+	width: 50%;
+}
+#right a{
+	float: right;
+}
+/*所有的*/
+#studyNotes a{
+	background: #FFFFFF;
+	display: block;
+	border: 2px solid #C9C9C9;
+
+}
+#studyNotes a:hover{
+	border: 1px solid #535252;
+	box-shadow: 0 0 2vmax #535252;
+}
+#studyNotes span{
+	width: 100%;
+	text-align: center;
+	color: #535252;
+}
+
+#studyNotes a div{
+		width: 100%;
+		height: 100%;
+	}
+
+
+/*竖屏*/
+@media only screen and (orientation: portrait){
+	#studyNotes {
+		width: 100%;
+		height: 60vmin;
+		background: url(../img/book.jpg);
+		background-size: 100% 100%;
+	}
+	#studyNotes a{
+		width: 70%;
+		height: 10vmin;
+		margin: 2vmin 0;
+		padding: 1vmin 0;
+	}
+	
+	#studyNotes a span{
+		width: 70%;
+		font-size: 2.5vmin;
+		line-height: 8vmin;
+	}
+	#studyNotes img{
+		height: 8vmin;
+	}
+	/*左边的*/
+	
+	#left a{
+		position: relative;
+		left: -23%;
+		border-radius: 0 3vmin 3vmin 0;
+	}
+	
+	/*右边的*/
+	
+	#right a{
+		position: relative;
+		left: 22%;
+		border-radius: 3vmin 0 0 3vmin;
+	}
+}
+
+/*横着的*/
+@media only screen and (orientation: landscape){
+	#studyNotes {
+		width: 100%;
+		height: 30vmax;
+		background: url(../img/book.jpg);
+		background-size: 100% 100%;
+	}
+	#studyNotes a{
+		width: 70%;
+		height: 5vmax;
+		margin: 1vmax 0;
+		padding: 0.5vmax 0;
+	}
+	
+	#studyNotes a span{
+		width: 70%;
+		font-size: 1vmax;
+		line-height: 4vmax;
+		
+	}
+	#studyNotes img{
+		height: 4vmax;
+	}
+	/*左边的*/
+	
+	#left a{
+		position: relative;
+		left: -23%;
+		border-radius: 0 1.5vmax 1.5vmax 0;
+	}
+	
+	/*右边的*/
+	
+	#right a{
+		position: relative;
+		left: 25%;
+		border-radius: 1.5vmax 0 0 1.5vmax;
+	}
+}
+
+
+
+/*github神马的*/
+#about{
+	width: 100%;
+	background: #FFFFFF;
+}
+#hide{
+	width: 100%;
+	height: 40%;
+}
+#hide span{
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	color: #C9C9C9;
+}
+#hide .me{
+	display: none;
+}
+#hide .git{
+	display: none;
+}
+#aboutico{
+	position: relative;
+	top: 10%;
+}
+#git{
+	background: url(../img/icon/github.png);
+	background-size: 200% 100%;
+}
+#git:hover{
+	background-position: 100% 0;
+}
+#me{
+	background: url(../img/icon/em.png);
+	background-size: 200% 100%;
+}
+#me:hover{
+	background-position: 100% 0;
+}
+
+@media only screen and (orientation: portrait){
+	#about{
+		height: 40vmin;
+	}
+	#hide span{
+		font-size: 4vmin;
+		line-height: 3vmin;
+	}
+	#aboutico{
+		width: 100%;
+		height: 10vmin;
+		padding: 0 30vmin ;
+	}
+	#aboutico .ico{
+		margin: 0 5vmin;
+		width: 10vmin;
+		height: 10vmin;
+	}
+}
+
+
+@media only screen and (orientation: landscape){
+	#about{
+		height: 30vmax;
+	}
+	#hide span{
+		font-size: 2.5vmax;
+		line-height: 2.5vmax;
+	}
+	#aboutico{
+		width: 100%;
+		height: 10vmax;
+		padding: 0 26vmax ;
+	}
+	#aboutico .ico{
+		margin: 0 2vmax;
+		width: 5vmax;
+		height: 5vmax;
+	}
+}
+
+
+
+#footer{
+	width: 100%;
+	height: 10vmin;
+	background: #FFFFFF;
+}
+#footer div{
+	width: 30%;
+	margin: 0% 35%;
+}
+#footer img{
+	width: 3vmin;
+	height:3vmin;
+	left: 20vmin;
+}
+#footer a {
+	color: #C9C9C9;
+	width: 100%;
+	text-align: center;
+	margin: 1% 0;
+	font-size: 2vmin;
+}
