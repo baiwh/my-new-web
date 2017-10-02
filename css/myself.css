@@ -26,7 +26,7 @@
 	#mySelf #ava img{
 		height: 100%;
 		width: 100%;
-		
+		border-radius: 10vmin;
 	}
 	#say{
 		position: relative;
@@ -58,7 +58,7 @@
 	#mySelf #ava img{
 		height: 100%;
 		width: 100%;
-		
+		border-radius: 10vmax;
 	}
 	#say{
 		position: relative;
